@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI - Quantum Notes</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Quantum Notes</h2>
+            <ul>
+                <li><a href="/notes">Notes</a></li>
+                <li><a href="/todo">To-do</a></li>
+                <li><a href="/ai">AI</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <div class="header">
+                <h2 id="section-title">AI</h2>
+            </div>
+            <div id="ai-section" class="section">
+                <h3>AI Section</h3>
+                <!-- Pomodoro Timer -->
+                <div class="pomodoro">
+                    <h4>Pomodoro Timer</h4>
+                    <div id="timer">
+                        <span id="minutes">25</span>:<span id="seconds">00</span>
+                    </div>
+                    <button id="start-timer">Start</button>
+                    <button id="reset-timer">Reset</button>
+                </div>
+                <!-- AI Chatbot -->
+                <div class="chatbot">
+                    <h4>AI Chatbot</h4>
+                    <div id="chatbox">
+                        <div id="messages"></div>
+                    </div>
+                    <input type="text" id="user-input" placeholder="Ask the AI..." />
+                    <button id="send-message">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/static/scripts.js"></script>
+</body>
+</html>

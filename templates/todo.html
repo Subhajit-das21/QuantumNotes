@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do - Quantum Notes</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Quantum Notes</h2>
+            <ul>
+                <li><a href="/notes">Notes</a></li>
+                <li><a href="/todo">To-do</a></li>
+                <li><a href="/ai">AI</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <div class="header">
+                <h2 id="section-title">To-do</h2>
+                <button id="add-task">Add Task</button>
+            </div>
+            <div id="todo-section" class="section">
+                <div class="view-options">
+                    <button onclick="showTasks('day')">Day</button>
+                    <button onclick="showTasks('month')">Month</button>
+                    <button onclick="showTasks('week')">Week</button>
+                </div>
+                <div id="tasks-list">
+                    <!-- To-do tasks will go here -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/static/scripts.js"></script>
+</body>
+</html>

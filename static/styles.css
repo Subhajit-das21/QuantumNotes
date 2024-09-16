@@ -1,0 +1,242 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    height: 80%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.main-content {
+    width: 80%;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header button {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.note-card, .task-item {
+    width: 200px;
+    max-height: 200px; /* Prevent overflow in preview */
+    overflow: auto;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.note-card:hover {
+    transform: scale(1.05);
+}
+
+.note-card.expanded {
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    overflow: auto;
+    background-color: #e0f7fa;
+    transform: scale(1);
+}
+
+.hidden {
+    display: none;
+}
+
+/* Back arrow */
+.back-arrow {
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+    margin-right: 10px;
+}
+
+/* Next arrow */
+.next-arrow {
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+    margin-left: 10px;
+}
+
+/* Delete button */
+.delete-button {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.delete-button:hover {
+    background-color: #c62828;
+}
+
+/* Pomodoro Timer */
+.pomodoro {
+    margin-bottom: 30px;
+}
+
+#timer {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#start-timer, #reset-timer {
+    padding: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* AI Chatbot */
+.chatbot {
+    margin-top: 20px;
+}
+
+#chatbox {
+    height: 200px;
+    border: 1px solid #ddd;
+    overflow-y: auto;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+
+#messages {
+    font-size: 14px;
+}
+
+#user-input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+#send-message {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 30px); /* Adjust width to fit in the container */
+    max-height: 100px;
+    overflow: auto;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.task-item input[type="radio"] {
+    margin-right: 10px;
+}
+
+.task-item label {
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.delete-button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.delete-button:hover {
+    background-color: #c62828;
+}
+
+.view-options {
+    margin-bottom: 20px;
+}
+
+.view-options button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.view-options button:hover {
+    background-color: #555;
+}
