@@ -4,7 +4,9 @@
       {
         "src": "server.py",
         "use": "@vercel/python",
-        "config": { "runtime": "python3.12" }
+        "config": {
+          "pythonVersion": "3.12.5"
+        }
       }
     ],
     "routes": [
@@ -12,7 +14,6 @@
         "src": "/(.*)",
         "dest": "server.py"
       }
-    ],
-    "buildCommand": "pip3.12 install -r requirements.txt"
+    ]
   }
   
