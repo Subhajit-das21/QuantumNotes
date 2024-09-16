@@ -1,8 +1,9 @@
-click @ file:///work/perseverance-python-buildout/croot/click_1698845879718/work
-Flask @ file:///croot/flask_1716545870149/work
-itsdangerous @ file:///croot/itsdangerous_1716533337253/work
-Jinja2 @ file:///croot/jinja2_1716993405101/work
-MarkupSafe @ file:///work/perseverance-python-buildout/croot/markupsafe_1707342994941/work
+blinker==1.6.2
+click==8.1.7
+Flask==2.3.3
+itsdangerous==2.1.2
+Jinja2==3.1.2
+MarkupSafe==2.1.3
+Werkzeug==2.3.7
 setuptools==72.1.0
-Werkzeug @ file:///croot/werkzeug_1716533313107/work
 wheel==0.44.0
